@@ -596,9 +596,10 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
         });
     }
 
-
-
-
+    private void setQuestKeyboardView() {
+        QuestKeyboardView keyboardView = findViewById(R.id.quest_keyboard_view);
+        if (keyboardView != null) keyboardView.setVisibility(View.VISIBLE);
+    }
 
     @SuppressLint("RtlHardcoded")
     @Override
